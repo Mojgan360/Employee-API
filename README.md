@@ -35,9 +35,7 @@ $ npm run test
 
 ## deploy
 
-Application deployeed on Netlify
-https://genuine-selkie-e9174c.netlify.app/
-beacuse key-Authorization is invalid now so dont show employee on browser
+Heaku
 
 ## Technologies
 
@@ -72,13 +70,13 @@ Functionality
 
 Sort by name & office: done
 
-Filter by name and Integration tests of mobile and tablets oce:done
+Filter by name and office:done
 
 Enable switch between a grid and a different view (such as list) :done
 
-Available on a free public url (such as Azure, Heroku): not done but deploy on Netlify
+Available on a free public url (such as Azure, Heroku): done
 
-CI/CD pipeline from your repo (e.g. Travis, GitLab, Azure):not done
+CI/CD pipeline from your repo (e.g. Travis, GitLab, Azure): done
 
 Testing/QA
 
