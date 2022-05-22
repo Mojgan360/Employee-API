@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
-import EmployeesState, { useEmployee } from './EmployeesState'
-import EmployeesContext from './employeesContext'
+import EmployeesState, { useEmployee } from '../EmployeesState'
+import EmployeesContext from '../employeesContext'
 
 const state = { employees: [] }
 const dispatch = jest.fn()

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, cleanup } from '@testing-library/react'
 
 import FilterState from '../../../../context/filter/FilterState'
 import EmployeesState from '../../../../context/employees/EmployeesState'
@@ -23,7 +23,9 @@ const gridCardProps = {
   linkedIn: '/pub/agron-kabashi/54/6a8/4a6',
   imagePortraitUrl: 'https://i.1337co.de/profile/agron-kabashi',
 }
-
+afterEach(() => {
+  cleanup()
+})
 describe('GridCard', () => {
   it('should show image of employee with correct src', async () => {
     render(<MockSearchContainer {...gridCardProps} />)

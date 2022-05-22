@@ -1,10 +1,10 @@
-import employeesReducer from './employeesReducer'
+import employeesReducer from '../employeesReducer'
 
 import {
   GET_EMPLOYEES_BEGIN,
   GET_EMPLOYEES_SUCCESS,
   GET_EMPLOYEES_ERROR,
-} from '../../actions'
+} from '../../../actions'
 
 describe('employeesReducer test', () => {
   it('should loding be true when GET_EMPLOYEES_BEGIN action is disptched', () => {

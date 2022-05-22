@@ -25,7 +25,6 @@ const Pagination = () => {
   const [employees, setEmployees] = useState([])
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(6)
   const [minPageNumberLimit, setminPageNumberLimit] = useState(0)
-
   useEffect(() => {
     if (isLoading) return
     setEmployees(data)
@@ -109,9 +108,9 @@ const Pagination = () => {
   return (
     <PaginationContainer>
       {grid_view ? (
-        <GridView data={paginate(employees)} data-testid='gridview' />
+        <GridView data={paginate(employees)} />
       ) : (
-        <ListView data={paginate(employees)} />
+        <ListView data-testid='list-view' data={paginate(employees)} />
       )}
 
       <NumberWrapper>
